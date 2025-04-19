@@ -2,7 +2,6 @@ body {
     height: 100%;
     width: 100%;
     background: #080f1a;
-    overflow: hidden;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -11,11 +10,20 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
 .container {
     position: relative;
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .glass {
@@ -365,7 +373,7 @@ body {
 
 .poem-container {
     max-width: 600px;
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -381,6 +389,17 @@ body {
 }
 
 /* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container, .text-content {
+        width: 45%;
+    }
+}
+
 @media (max-width: 768px) {
     .texto {
         font-size: 4vw;
