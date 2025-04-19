@@ -5,8 +5,10 @@ body {
     overflow: hidden;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -349,13 +351,17 @@ body {
 }
 
 .texto {
-    top: 90%;
     color: white;
     font-size: 2vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    line-height: 1.5;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.poem-container {
+    max-width: 600px;
+    width: 90%;
+    margin-top: 20px;
 }
 
 /* Media Queries for Responsiveness */
